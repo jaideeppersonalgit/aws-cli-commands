@@ -1,0 +1,19 @@
+$ aws help  
+
+This command will list out the possible combinations of aws key terminologies that we can use in the terminal(AWS CLI). 
+
+$ aws ec2 describe-instances
+
+This command is used to list all instances which is in the particular aws account through pagination technique.  
+
+$ aws configure --profile profilename 
+
+ This command is used to create and configure profiles in aws. 
+
+$ aws configure output format {json, yaml, yaml-stream, text, table} 
+
+This command will helps to structure the output in a prescribed format.
+
+$ aws configure region (region-name) 
+
+This command is to configure the region for the respective instance that we need. 
