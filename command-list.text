@@ -17,3 +17,36 @@ This command will helps to structure the output in a prescribed format.
 $ aws configure region (region-name) 
 
 This command is to configure the region for the respective instance that we need. 
+
+
+Example: aws configure
+
+aws s3 ls - This command is used to list the contents of an S3 bucket.
+Example: aws s3 ls s3://mybucket
+
+aws ec2 describe-instances - This command is used to describe the EC2 instances running in a region.
+Example: aws ec2 describe-instances --region us-west-2
+
+aws s3 cp - This command is used to copy files from local to S3 or vice versa.
+Example: aws s3 cp /path/to/local/file s3://mybucket/path/to/s3/location
+
+aws lambda create-function - This command is used to create a new Lambda function.
+Example: aws lambda create-function --function-name my-function --runtime nodejs14.x --handler index.handler --role arn:aws:iam::123456789012:role/lambda-execution-role --zip-file fileb://function.zip
+
+aws s3 sync - This command is used to synchronize the contents of a local directory with an S3 bucket.
+Example: aws s3 sync /path/to/local/directory s3://mybucket/path/to/s3/location
+
+aws cloudformation create-stack - This command is used to create a new CloudFormation stack.
+Example: aws cloudformation create-stack --stack-name my-stack --template-body file://my-template.yaml --parameters ParameterKey=MyParameter,ParameterValue=my-value
+
+aws ec2 start-instances - This command is used to start one or more EC2 instances.
+Example: aws ec2 start-instances --instance-ids i-1234567890abcdef0
+
+aws s3api put-bucket-versioning - This command is used to enable versioning on an S3 bucket.
+Example: aws s3api put-bucket-versioning --bucket mybucket --versioning-configuration Status=Enabled
+
+aws rds create-db-instance - This command is used to create a new RDS instance.
+Example: aws rds create-db-instance --db-instance-identifier mydbinstance --engine mysql --db-instance-class db.t2.micro --master-username myuser --master-user-password mypassword --allocated-storage 20
+
+Note that the examples given above are just a small subset of the available AWS CLI commands, and are intended only as an illustration of commonly used commands. For a comprehensive list of all available commands and their usage, you can refer to the AWS CLI documentation.
+
